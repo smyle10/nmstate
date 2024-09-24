@@ -1,0 +1,40 @@
+test: pytest -vvvv --runslow ${TMT_TEST_NAME##*/}
+duration: 10m
+
+/bond_test.py:
+/dns_test.py:
+/dynamic_ip_test.py:
+/ethernet_mtu_test.py:
+/ethtool_test.py:
+/examples_test.py:
+/gen_diff_test.py:
+/hostname_test.py:
+/hsr_test.py:
+/iface_admin_state_test.py:
+/infiniband_test.py:
+/interface_common_test.py:
+/ipsec_test.py:
+/linux_bridge_test.py:
+/lldp_test.py:
+/loopback_test.py:
+/macsec_test.py:
+/mac_vlan_test.py:
+/mac_vtap_test.py:
+/mem_leak_test.py:
+/mptcp_test.py:
+/nmstate_autoconf_test.py:
+/nmstatectl_edit_test.py:
+/nmstatectl_test.py:
+/nmstate_service_test.py:
+/ovs_test.py:
+  duration: 20m
+/preserve_ip_config_test.py:
+/pretty_state_test.py:
+/route_test.py:
+/sriov_test.py:
+/static_ip_address_test.py:
+/timeout_test.py:
+/veth_test.py:
+/vlan_test.py:
+/vrf_test.py:
+/vxlan_test.py:
