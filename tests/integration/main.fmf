@@ -1,40 +1,50 @@
-test: pytest -vvvv --runslow ${TMT_TEST_NAME##*/}
+test: pytest -vvvv --runslow ${TMT_TEST_NAME##*/}.py
 duration: 10m
+contact: Mingyu Shi <mshi@redhat.com>
+component: nmstate
 
-/bond_test.py:
-/dns_test.py:
-/dynamic_ip_test.py:
-/ethernet_mtu_test.py:
-/ethtool_test.py:
-/examples_test.py:
-/gen_diff_test.py:
-/hostname_test.py:
-/hsr_test.py:
-/iface_admin_state_test.py:
-/infiniband_test.py:
-/interface_common_test.py:
-/ipsec_test.py:
-/linux_bridge_test.py:
-/lldp_test.py:
-/loopback_test.py:
-/macsec_test.py:
-/mac_vlan_test.py:
-/mac_vtap_test.py:
-/mem_leak_test.py:
-/mptcp_test.py:
-/nmstate_autoconf_test.py:
-/nmstatectl_edit_test.py:
-/nmstatectl_test.py:
-/nmstate_service_test.py:
-/ovs_test.py:
+/bond_test:
+/dns_test:
+/dynamic_ip_test:
+/ethernet_mtu_test:
+/ethtool_test:
+/examples_test:
+/gen_diff_test:
+/hostname_test:
+/hsr_test:
+/iface_admin_state_test:
+/infiniband_test:
+/interface_common_test:
+/ipsec_test:
+  link:
+    - verifies: https://polarion.engineering.redhat.com/polarion/redirect/project/RHELKNET/workitem?id=KNET-295983
+    - verifies: https://polarion.engineering.redhat.com/polarion/redirect/project/RHELKNET/workitem?id=KNET-295916
+    - verifies: https://polarion.engineering.redhat.com/polarion/redirect/project/RHELKNET/workitem?id=KNET-295944
+    - verifies: https://polarion.engineering.redhat.com/polarion/redirect/project/RHELKNET/workitem?id=KNET-295945
+    - verifies: https://polarion.engineering.redhat.com/polarion/redirect/project/RHELKNET/workitem?id=KNET-295946
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296462
+  id: e125929b-12a8-4583-bda2-871de5bbcb26
+/linux_bridge_test:
+/lldp_test:
+/loopback_test:
+/macsec_test:
+/mac_vlan_test:
+/mac_vtap_test:
+/mem_leak_test:
+/mptcp_test:
+/nmstate_autoconf_test:
+/nmstatectl_edit_test:
+/nmstatectl_test:
+/nmstate_service_test:
+/ovs_test:
   duration: 20m
-/preserve_ip_config_test.py:
-/pretty_state_test.py:
-/route_test.py:
-/sriov_test.py:
-/static_ip_address_test.py:
-/timeout_test.py:
-/veth_test.py:
-/vlan_test.py:
-/vrf_test.py:
-/vxlan_test.py:
+/preserve_ip_config_test:
+/pretty_state_test:
+/route_test:
+/sriov_test:
+/static_ip_address_test:
+/timeout_test:
+/veth_test:
+/vlan_test:
+/vrf_test:
+/vxlan_test:
