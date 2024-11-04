@@ -1,3 +1,5 @@
+context:
+  component: nmstate
 discover:
   how: fmf
 prepare:
@@ -12,6 +14,35 @@ prepare:
       skip_if_unavailable=1
       sslverify=0
       EOF
+  - how: shell
+    script: |
+      releasexy=$(grep -E -o '[0-9]+\.[0-9]+' /etc/redhat-release)
+      x=$(echo $releasexy | cut -d. -f1)
+      node=https://download.devel.redhat.com
+      curl -k -L $node/rhel-$x/composes/RHEL-$x/ | grep -F RHEL-$releasexy | grep -v -F '.d.'> /tmp/webcontent
+      compose=$(grep -Po 'RHEL-\d+\.\d+(\.[0-9])*-(updates-)*20\d{6}\.\d+' /tmp/webcontent | sort | tail -1)
+      dev_compose=$(grep -Po 'RHEL-\d+\.\d+(\.[0-9])*-(updates-)*20\d{6}(\.d)*\.\d+' /tmp/webcontent | sort | tail -1)
+      echo > /etc/yum.repos.d/mshi-latest.repo
+      for repo in AppStream BaseOS CRB; do
+      cat <<- EOF >> /etc/yum.repos.d/mshi-latest.repo
+      [latest-compose-$repo]
+      name=latest-compose-$repo
+      baseurl=$node/rhel-\$releasever/composes/RHEL-\$releasever/$compose/compose/$repo/\$arch/os/
+      enabled=1
+      gpgcheck=0
+      skip_if_unavailable=1
+      sslverify=0
+
+      [latest-dev_compose-$repo]
+      name=latest-dev_compose-$repo
+      baseurl=$node/rhel-\$releasever/composes/RHEL-\$releasever/$dev_compose/compose/$repo/\$arch/os/
+      enabled=1
+      gpgcheck=0
+      skip_if_unavailable=1
+      sslverify=0
+      EOF
+      done
+      dnf upgrade NetworkManager -y
   - how: install
     package:
       - nmstate
@@ -34,12 +65,11 @@ environment:
   OVS_VER: 3.1
 provision:
   how: minute
-  image: rhel9
+  image: $@{distro}
 report:
-  - how: junit # in case the later method failed
-    file: myjunit-20240924.xml
+  - how: html
   - how: reportportal
     project: mshi_personal
     url: https://reportportal-rhelkernel.apps.ocp-c1.prod.psi.redhat.com
-    # token: b243b1f5-117d-4048-be2c-9f2c5d9003fc
-    launch: nmstate upstream
+    # token: ${TMT_PLUGIN_REPORT_REPORTPORTAL_TOKEN}
+    launch: nmstate pytest

@@ -1,16 +1,64 @@
 /bond_test:
+  id: 29c0ce63-6b72-402a-b173-d396f0a2f025
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296501
 /dispath_test:
+  id: 5970545a-227f-4704-8252-fa9912dc43a9
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296502
 /dns_test:
+  id: 144866eb-fc56-4a3a-b5b3-b7d51501f8aa
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296503
 /ethtool_test:
+  id: 2fef9df4-cf76-4311-996a-f3e1a053777c
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296504
 /gen_conf_test:
+  id: 0311e106-2c71-438c-8571-f3f5af8990b1
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296505
 /ieee802_1x_test:
+  id: eaaa6fed-9d8b-42a3-8d21-5b6cf4c56ce2
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296506
 /iproute_config_test:
+  id: b7db1eda-2f83-49bf-8512-bd7f9ac9a3eb
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296508
 /ip_test:
+  id: 73d39897-c2b5-4f9f-8081-4c0441549bf9
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296507
 /linux_bridge_test:
+  id: c1582105-8d9e-4a09-9706-6a72de1576c9
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296509
 /ovs_test:
+  id: 05802926-f782-4a16-ac3d-c1fb06a3d9b5
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296510
 /profile_test:
+  id: 69502753-7987-4aff-a8cc-087adc6d0517
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296511
 /route_rule_test:
+  id: ded96c08-5a92-4aeb-89a5-35cb28bf4efd
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296512
 /route_test:
+  id: b78cf80d-0c3c-48ea-bb20-d22b056d98e3
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296513
 /sriov_test:
+  id: f06f4873-96d1-411e-8b0b-75fec78225bc
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296514
 /veth_test:
+  id: 4c054c4d-0633-4f7f-83ce-ca0491027b70
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296515
 /vlan_test:
+  id: f01c6d75-cd0d-47b0-8635-95cdc58df7b8
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296516

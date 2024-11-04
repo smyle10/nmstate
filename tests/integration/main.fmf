@@ -2,49 +2,156 @@ test: pytest -vvvv --runslow ${TMT_TEST_NAME##*/}.py
 duration: 10m
 contact: Mingyu Shi <mshi@redhat.com>
 component: nmstate
-
+link:
+  - verifies: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-294115
+    note: A base placeholder for all tests without requirement
 /bond_test:
+  id: f86d61ea-1c1a-42b8-85d7-e8774199044e
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296466
 /dns_test:
+  id: e67d80e5-f0bf-4638-ab01-ecdfb5447538
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296467
 /dynamic_ip_test:
+  id: 1b2e2b2f-d3d7-4e7f-b2bc-e9b6834f26df
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296468
 /ethernet_mtu_test:
+  id: 8d09a408-8bf6-46eb-9adc-40733aaeb9e0
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296469
 /ethtool_test:
+  id: 7e82f6c7-1fe9-42bd-8346-01d4e51a5fb1
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296470
 /examples_test:
+  id: c579f602-2dcb-488a-8c13-93d25ef330b7
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296471
 /gen_diff_test:
+  id: a7b17597-24d1-40da-9b3a-cf787380a98a
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296472
 /hostname_test:
+  id: 9826024c-ccee-4b02-a162-ab8b1f1921b3
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296473
 /hsr_test:
+  id: 59ece7a2-ba77-4852-8de2-d62812306c57
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296474
 /iface_admin_state_test:
+  id: 4230274d-53d1-48a0-a705-fdfa179e1036
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296475
 /infiniband_test:
+  id: 29edb0a2-7a0d-4b45-8b95-4291db1fad1a
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296476
 /interface_common_test:
+  id: ff20c66f-ae5b-41fc-ba58-c2e8bc34321e
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296477
 /ipsec_test:
   link:
-    - verifies: https://polarion.engineering.redhat.com/polarion/redirect/project/RHELKNET/workitem?id=KNET-295983
-    - verifies: https://polarion.engineering.redhat.com/polarion/redirect/project/RHELKNET/workitem?id=KNET-295916
-    - verifies: https://polarion.engineering.redhat.com/polarion/redirect/project/RHELKNET/workitem?id=KNET-295944
-    - verifies: https://polarion.engineering.redhat.com/polarion/redirect/project/RHELKNET/workitem?id=KNET-295945
-    - verifies: https://polarion.engineering.redhat.com/polarion/redirect/project/RHELKNET/workitem?id=KNET-295946
+    - verifies: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-295983
+    - verifies: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-295916
+    - verifies: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-295944
+    - verifies: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-295945
+    - verifies: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-295946
     - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296462
   id: e125929b-12a8-4583-bda2-871de5bbcb26
 /linux_bridge_test:
+  id: bfa6c571-5165-46b3-bf13-9c45b2102b8b
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296478
 /lldp_test:
+  id: 5485be1b-0f15-4115-9762-c00b52d1c74d
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296479
 /loopback_test:
+  id: ff103e00-e22d-4793-a848-75e7b75f3f1e
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296480
 /macsec_test:
+  id: 171bccde-8229-4f2f-8c4a-835d60f31cf7
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296483
 /mac_vlan_test:
+  id: ed306b6b-009c-44fe-9941-6e89abb6fe6d
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296481
 /mac_vtap_test:
+  id: 8db4e0ff-2f56-40af-811c-6c01b320b507
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296482
 /mem_leak_test:
+  id: 4061e2a6-9cf2-46a8-8bf6-d65aeeb0df04
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296484
 /mptcp_test:
+  id: 887de391-58df-4569-a723-be1339118193
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296485
 /nmstate_autoconf_test:
+  id: ea94f054-2ee6-4380-99c0-d695a0a9e127
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296486
 /nmstatectl_edit_test:
+  id: fee37492-fab2-4b9f-aae3-3dadfc3c5bb6
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296488
 /nmstatectl_test:
+  id: a97bb914-3581-402a-88f6-0471116c22ba
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296489
 /nmstate_service_test:
+  id: f4188b5e-c896-4ac9-8302-eac79466b2cc
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296487
 /ovs_test:
   duration: 20m
+  id: e669a9aa-4a2d-4d99-ac46-312ea20eb946
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296490
 /preserve_ip_config_test:
+  id: 273061fe-6d04-48e4-bc80-e57d16cf1f54
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296491
 /pretty_state_test:
+  id: ae2e13a1-94aa-4f93-b3ca-6218516ba044
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296492
 /route_test:
+  id: 46b0a950-d785-4033-835e-a1cc5b25567e
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296493
 /sriov_test:
+  id: 1b15a0ee-f915-455c-976c-dcf1c2994f98
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296494
 /static_ip_address_test:
+  id: eab587ca-e93c-48b5-bcf6-ac686cd054e1
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296495
 /timeout_test:
+  id: df9e5830-3005-4bce-a558-824164c72eb1
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296496
 /veth_test:
+  id: 5eda6c7f-b410-4457-8b54-df42feb814ad
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296497
 /vlan_test:
+  id: 5640cd1b-27c9-4bee-89ee-fd533872b5f4
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296498
 /vrf_test:
+  id: 46f7450c-a2ad-497a-b85c-45c537df41f0
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296499
 /vxlan_test:
+  id: 9f91bb5d-8df6-4ba6-a568-63b93c076cc5
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296500
