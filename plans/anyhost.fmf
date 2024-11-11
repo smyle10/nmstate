@@ -1,0 +1,5 @@
+discover+:
+  exclude:
+  - /ethtool_test
+  - /infiniband_test
+  - /sriov_test

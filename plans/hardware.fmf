@@ -1,0 +1,17 @@
+provision:
+  how: beaker
+  image: $@{distro}%
+  whiteboard: nmstate pytest hardware $@{distro} CTS_NIGHTLY
+  hardware:
+    hostname: dell-per740-79.rhts.eng.pek2.redhat.com
+environment+:
+  TEST_REAL_NIC: ens1f0
+  TEST_PCI_PATH: 0000:3b:00.1
+discover+:
+  test:
+  - /ethtool_test
+  - /examples_test
+  - /infiniband_test
+  - /linux_bridge_test
+  - /ovs_test
+  - /sriov_test

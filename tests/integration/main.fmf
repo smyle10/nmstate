@@ -26,6 +26,7 @@ link:
   link:
     - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296470
 /examples_test:
+  test: TEST_REAL_NIC=ibs2f0 pytest -vvvv --runslow ${TMT_TEST_NAME##*/}.py
   id: c579f602-2dcb-488a-8c13-93d25ef330b7
   link:
     - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296471
@@ -46,6 +47,7 @@ link:
   link:
     - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296475
 /infiniband_test:
+  test: TEST_REAL_NIC=ibs2f0 pytest -vvvv --runslow ${TMT_TEST_NAME##*/}.py
   id: 29edb0a2-7a0d-4b45-8b95-4291db1fad1a
   link:
     - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296476
@@ -111,6 +113,7 @@ link:
   link:
     - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296487
 /ovs_test:
+  order: 100
   duration: 20m
   id: e669a9aa-4a2d-4d99-ac46-312ea20eb946
   link:
