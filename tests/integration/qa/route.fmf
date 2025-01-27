@@ -1,0 +1,9 @@
+test: pytest -vvvv route_test.py::${TMT_TEST_NAME##*/}
+/test_gen_conf_special_routes:
+  id: ce8e488c-9a44-41ae-924b-368276b909a6
+  tag: customer
+  link:
+    - implements: https://polarion.engineering.redhat.com/polarion/#/project/RHELKNET/workitem?id=KNET-296744
+    - verifies: https://issues.redhat.com/browse/RHEL-19823
+    - verifies: https://issues.redhat.com/browse/RHEL-13334
+    - verifies: https://issues.redhat.com/browse/RHEL-56727
